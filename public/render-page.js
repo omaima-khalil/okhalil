@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("D:\\develop\\gatsby-crash-course\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"));
+		module.exports = factory(require("C:\\development\\gatsby-crash-course\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["D:\\develop\\gatsby-crash-course\\node_modules\\lodash\\merge.js", "react", "react-dom/server"], factory);
+		define("lib", ["C:\\development\\gatsby-crash-course\\node_modules\\lodash\\merge.js", "react", "react-dom/server"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("D:\\develop\\gatsby-crash-course\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"));
+		exports["lib"] = factory(require("C:\\development\\gatsby-crash-course\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"));
 	else
-		root["lib"] = factory(root["D:\\develop\\gatsby-crash-course\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"]);
+		root["lib"] = factory(root["C:\\development\\gatsby-crash-course\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -378,6 +378,24 @@ exports.wrapPageElement = true;
  */
 
 exports.wrapRootElement = true;
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js":
+/*!********************************************************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  React: react__WEBPACK_IMPORTED_MODULE_0__
+});
 
 /***/ }),
 
@@ -2160,7 +2178,9 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (Object.assign({}));
+var scope_0 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js").default;
+
+/* harmony default export */ __webpack_exports__["default"] = (Object.assign({}, scope_0));
 
 /***/ }),
 
@@ -3395,9 +3415,9 @@ if (false) {} else {
 /***/ }),
 
 /***/ "lodash/merge":
-/*!***********************************************************************************!*\
-  !*** external "D:\\develop\\gatsby-crash-course\\node_modules\\lodash\\merge.js" ***!
-  \***********************************************************************************/
+/*!***************************************************************************************!*\
+  !*** external "C:\\development\\gatsby-crash-course\\node_modules\\lodash\\merge.js" ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

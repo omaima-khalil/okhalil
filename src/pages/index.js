@@ -2,10 +2,10 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import SEO from "../components/seo";
 import Container from "../components/container";
+import "../css/styles.css";
 export default function Home({ data, location }) {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMdx.nodes;
-  console.log(posts);
   return (
     <Container>
       <SEO title={siteTitle} />
@@ -18,9 +18,9 @@ export default function Home({ data, location }) {
               {!!post.frontmatter.cover ? (
                 <image sizes={post.frontmatter.cover.childImageSharp.sizes} />
               ) : null}
-              <h1>{title}</h1>
-              <p>{post.frontmatter.date}</p>
-              <p>{post.frontmatter.excerpt}</p>
+              <h1 className="heading">{title}</h1>
+              <p className="paragraph">{post.frontmatter.date}</p>
+              <p className="paragraph">{post.frontmatter.description}</p>
             </Link>
           </div>
         );
