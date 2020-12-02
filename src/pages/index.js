@@ -2,25 +2,25 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import SEO from "../components/seo";
 import Container from "../components/container";
-import "../css/styles.css";
+
 export default function Home({ data, location }) {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const siteDescription = data.site.siteMetadata.description;
   const posts = data.allMdx.nodes;
+
   return (
     <Container>
-      <SEO title={siteTitle} />
+      <SEO title={siteTitle} description={siteDescription} />
+      <h1 className="home-title">Welcome to our Blog</h1>
       {posts.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
 
         return (
-          <div key={post.slug}>
-            <Link to={post.slug}>
-              {!!post.frontmatter.cover ? (
-                <image sizes={post.frontmatter.cover.childImageSharp.sizes} />
-              ) : null}
-              <h1 className="heading">{title}</h1>
-              <p className="paragraph">{post.frontmatter.date}</p>
-              <p className="paragraph">{post.frontmatter.description}</p>
+          <div className="card" key={post.slug}>
+            <Link className="card-link" to={post.slug}>
+              <h1 className="card-title">{title}</h1>
+              <p className="card-date">{post.frontmatter.date}</p>
+              <p className="card-description">{post.frontmatter.description}</p>
             </Link>
           </div>
         );
@@ -41,7 +41,7 @@ export const pageQuery = graphql`
         excerpt
         slug
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "Do MMMM YYYY ")
           title
           description
         }
