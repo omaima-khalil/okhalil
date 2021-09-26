@@ -1,3 +1,3 @@
 # okhalil
 Hey, welcome to my personal blog that reflex my idias :)
-q
+a blog that express some good ideas
