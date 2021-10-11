@@ -2,6 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import SEO from "../components/seo";
 import Container from "../components/container";
+import Hero from "../components/Hero"
 
 export default function Home({ data, location }) {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -11,8 +12,10 @@ export default function Home({ data, location }) {
   return (
     <Container>
       <SEO title={siteTitle} description={siteDescription} />
-      <h1 className="home-title">Welcome to our Blog</h1>
-      {posts.map((post) => {
+      <Hero/>
+   
+   
+   {posts.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
 
         return (

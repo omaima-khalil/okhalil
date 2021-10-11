@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+:root{
+  --primary-white:#ffff;
+  --primary-orange:#f9ab00;
+  --primary-dark:rgba(255,255,255,0);
+  --primary-red:#ef4035;
+  --primary-hover-red:#f33501;
+  --primary-hover-blue: cadetblue;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-black: #000000;
+  --primary-green: green;
+}
+body{
+  font-family: "Roboto Condensed" ,sans-serif !important;
+}
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -12,13 +29,98 @@
 }
 
 .main {
+
+
   justify-content: center;
   align-items: flex-start;
-  margin: 0 auto 4rem auto;
+  margin:  0 auto 4rem auto;
   width: 100%;
-  max-width: 1080px;
+  /*max-width: 1080px;*/
+}
+/*************Header*******/
+
+/*************Hero*********/
+.header-wrapper{
+  position: relative;
+  background: url(../media/images/bg_laptop.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:80vh;
+
+}
+.main-info{
+display:flex;
+position:absolute;
+top:0;
+right:0;
+left:0;
+bottom:0;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+text-align:center;
+font-family: "Roboto Condensed", sans-serif;
+z-index:1;
+}
+.main-info  h1{
+  color:var(--primary-orange);
+  font-family: sans-serif;
+  text-shadow:2px 2px #ff0000 ;
+
+}
+.main-info p{
+  color:var(--primary-white);
+  padding-left: 85px;
+  padding-right: 85px;
+
+  font-size: 2rem;
+
+
 }
 
+/********Typed Text***/
+.typed-text{
+
+  color: var(--primary-white);
+}
+
+@media(max-width:20px) {
+  .main-info h1{
+    font-size:1.7rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+}
+/*********************/
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius:0;
+  padding:0.625rem 0.75rem 0.75rem 0.75rem;
+  color:var(--primary-white);
+  margin: 2rem;
+
+}
+.btn-main-offer:hover{
+  text-decoration:none;
+  background-color: var(--primary-hover-red);
+  color:var(--primary-white);
+  transition: .2s ease-in-out;
+
+}
+/*******Particles Js******/
+.tsparticles-canvas-el{
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index:1;
+}
+@media(max-width:768px){
+.particles-canvas{
+  display:none;
+}
+}
 .home-title {
   margin-top: 3rem;
   font-weight: 700;
