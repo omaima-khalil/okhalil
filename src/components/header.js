@@ -13,7 +13,7 @@ const Header = ({ siteTitle, siteDescription }) => {
         <a href="/" className="sticky-nav-button">
           Contact{" "}
         </a>
-        <a href="/" className="sticky-nav-button">
+        <a href="/about" className="sticky-nav-button">
           About us
         </a>
       </div>

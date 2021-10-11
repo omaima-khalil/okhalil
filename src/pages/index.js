@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import SEO from "../components/seo";
 import Container from "../components/container";
 import Hero from "../components/Hero"
+import Footer from "../components/Footer";
 
 export default function Home({ data, location }) {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -28,6 +29,7 @@ export default function Home({ data, location }) {
           </div>
         );
       })}
+      <Footer/>
     </Container>
   );
 }

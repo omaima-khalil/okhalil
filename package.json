@@ -11,8 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "fortawesome": "0.0.1-security",
     "gatsby": "^2.27.5",
     "gatsby-image": "^2.7.0",
     "gatsby-plugin-mdx": "^1.10.1",
@@ -22,8 +26,10 @@
     "gatsby-transformer-sharp": "^2.8.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-fontawesome": "^1.7.1",
     "react-helmet": "^6.1.0",
     "react-particles-js": "^3.5.3",
+    "react-scroll": "^1.8.4",
     "react-typed": "^1.2.0"
   }
 }
