@@ -7,11 +7,8 @@ const Header = ({ siteTitle, siteDescription }) => {
         Home
       </a>
       <div className="sticky-nav-stack">
-        <a href="/" className="sticky-nav-button">
+        <a href="/blog" className="sticky-nav-button">
           Blog
-        </a>
-        <a href="/" className="sticky-nav-button">
-          Contact{" "}
         </a>
         <a href="/about" className="sticky-nav-button">
           About us

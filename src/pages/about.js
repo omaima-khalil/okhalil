@@ -1,13 +1,18 @@
 
 import React from "react";
+import { Link, graphql } from "gatsby";
 import Container from "../components/container";
 import Author from "../media/images/oum.jpg";
+import SEO from "../components/seo";
 
-export default () => {
+export default ({data}) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const siteDescription = data.site.siteMetadata.description;
   return (
-   
-      <Container>
-       <div className="container py-5">
+  <Container>
+     
+        
+       <div className="containers py-5">
                <div className="row">
                    <div className="col-lg-6 col-xm-12">
                        <div className="photo-wrap mb-5">
@@ -47,8 +52,17 @@ Follow me on:
                    </div>
                </div>
            </div>
-      </Container>
-    
+     
+           </Container> 
   );
 };
 
+
+export const pageQuery = graphql`
+  {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }`;
