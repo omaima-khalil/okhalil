@@ -22,7 +22,11 @@ body{
   background: url(../media/images/bg_laptop.jpg) no-repeat;
   background-size: cover;
   background-position:center;
-  height:100vh;
+
+  height:60vh;
+ 
+  margin: 0 -10px;
+  padding: 0 5px;
 }
 .main-info{
 display:flex;
@@ -253,13 +257,15 @@ align-content: center;
   margin-top: 2rem;
   text-decoration: none;
   transition: transform 350ms;
+  box-shadow: 0 1px 2px  var(--primary-black);
+  border-Radius: 5px;
 }
 .card:hover {
   cursor: pointer;
   text-decoration: none;
-  border-left: 2px solid #60a1e7;
+  border-left: 2px solid black;
   transform: translateX(-2px);
-  border-bottom: 1px solid #60a1e7;
+  border-bottom: 1px solid black;
 }
 
 .card:first-of-type {

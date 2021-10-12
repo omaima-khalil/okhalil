@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-import SEO from "../components/seo";
-import Container from "../components/container";
+import SEO from "../components/Seo";
+import Container from "../components/Container";
 
 export default ({data,location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`;

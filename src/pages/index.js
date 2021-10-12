@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-import SEO from "../components/seo";
-import Container from "../components/container";
+import SEO from "../components/Seo";
+import Container from "../components/Container";
 import Hero from "../components/Hero"
 import Footer from "../components/Footer";
 
@@ -11,10 +11,11 @@ export default function Home({ data, location }) {
   const posts = data.allMdx.nodes;
 
   return (
-    <Container>
-      <SEO title={siteTitle} description={siteDescription} />
-      <Hero/>
+    <div>
    
+    <SEO title={siteTitle} description={siteDescription} />
+    <Hero/>
+    <section className="main">
    
    {posts.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
@@ -29,8 +30,9 @@ export default function Home({ data, location }) {
           </div>
         );
       })}
-      <Footer/>
-    </Container>
+    </section>
+    <Footer/>
+    </div>
   );
 }
 

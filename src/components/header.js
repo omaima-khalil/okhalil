@@ -2,6 +2,7 @@ import React from "react";
 
 const Header = ({ siteTitle, siteDescription }) => {
   return (
+    
     <div className="sticky-nav">
       <a href="/" className="sticky-nav-button">
         Home
