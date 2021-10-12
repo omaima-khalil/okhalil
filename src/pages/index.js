@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import SEO from "../components/Seo";
-import Container from "../components/Container";
 import Hero from "../components/Hero"
 import Footer from "../components/Footer";
 

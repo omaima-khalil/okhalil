@@ -1,9 +1,9 @@
 
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Container from "../components/Container";
 import Author from "../media/images/oum.jpg";
-import SEO from "../components/Seo";
+
 
 export default ({data}) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
