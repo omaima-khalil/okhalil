@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ siteTitle, siteDescription }) => {
+const Header = () => {
   return (
     
     <div className="sticky-nav">
