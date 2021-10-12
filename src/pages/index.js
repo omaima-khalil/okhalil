@@ -4,7 +4,7 @@ import SEO from "../components/Seo";
 import Hero from "../components/Hero"
 import Footer from "../components/Footer";
 
-export default function Home({ data, location }) {
+export default function Home({ data }) {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const siteDescription = data.site.siteMetadata.description;
   const posts = data.allMdx.nodes;

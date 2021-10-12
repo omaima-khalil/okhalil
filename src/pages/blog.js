@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import SEO from "../components/Seo";
 import Container from "../components/Container";
 
-export default ({data,location}) => {
+export default ({data}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`;
     const siteDescription = data.site.siteMetadata.description;
     const posts = data.allMdx.nodes;

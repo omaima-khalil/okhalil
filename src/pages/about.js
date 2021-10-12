@@ -6,8 +6,7 @@ import Author from "../media/images/oum.jpg";
 
 
 export default ({data}) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
-  const siteDescription = data.site.siteMetadata.description;
+ 
   return (
   <Container>
      
@@ -58,11 +57,3 @@ Follow me on:
 };
 
 
-export const pageQuery = graphql`
-  {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }`;
