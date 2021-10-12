@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import SEO from "../components/Seo";
-import Hero from "../components/Hero"
+import Hero from "../components/Hero";
 import Footer from "../components/Footer";
+import Container from "../components/Container";
 
 export default function Home({ data }) {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
