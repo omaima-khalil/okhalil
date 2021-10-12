@@ -1,11 +1,10 @@
 
 import React from "react";
-import { graphql } from "gatsby";
 import Container from "../components/Container";
 import Author from "../media/images/oum.jpg";
 
 
-export default ({data}) => {
+export default () => {
  
   return (
   <Container>

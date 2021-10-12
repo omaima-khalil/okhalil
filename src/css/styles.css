@@ -155,7 +155,7 @@ z-index:1;
   }
 }
 
-.footer .container {
+.footer .containers {
       display: flex;
       -webkit-box-align: center;
       align-items: center;
