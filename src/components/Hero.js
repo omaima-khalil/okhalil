@@ -1,7 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import {Link} from "gatsby"
-import Container from "../components/Container";
+import Container from "../components/container";
 
 
 const Hero=() => {
