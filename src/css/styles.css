@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 :root{
   --primary-white:#ffff;
   --primary-orange:#f9ab00;
@@ -186,6 +185,7 @@ z-index:1;
   padding: 0;
   border: 0;
 }
+/*****Container-style*****/
 
 .container {
   display: flex;
@@ -204,7 +204,7 @@ align-content: center;
   width: 100%;
   max-width: 1080px;
 }
-/*************other*******/
+/*************blog*******/
 
 .home-title {
   margin-top: 3rem;
