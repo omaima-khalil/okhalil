@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Crash Course`,
+    title: `My blog`,
     author: {
-      name: `James`,
-      summary: `The Youtuber you are watching`,
+      name: `Omaima`,
+      summary: `Opinions are mine`,
     },
-    description: `A simple Crash course .`,
+    description: `All about new technologies and efficient project management methodologies.`,
     siteUrl: `http://localhost:8000/`,
     social: {
-      twitter: `james_r_perkins`,
+      twitter: `@BadQuinn3`,
     },
   },
   plugins: [
