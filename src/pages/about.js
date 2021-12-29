@@ -19,14 +19,11 @@ export default () => {
                    </div>
                    <div className="col-lg-6 col-xm-12">
                        <h1 className="about-me-heading">About me</h1>
-                       <h2 className="about">I'm Omaima Khalil, I speak Javascript and Python.</h2>
-                       <p>
-
-This is my spot on the web for projects, tutorials, and anything else I
-want to write about or show the world.<br/><br/>
-
-Enthusiastic about Information Technology, starting by playing with Network security strategies, then satisfying building secure softwares.
-I love documenting and sharing what I learn, so I hope you enjoy the site.<br/><br/>
+                       <h2 className="about">I'm Omaima Khalil,</h2>
+                       <p> This is my spot on the web for projects, tutorials, and anything else I want to write about or show the world.
+                         <br/><br/>
+                         Enthusiastic about Information Technology, starting by playing with Network security strategies, then 
+                         satisfying building secure softwares.I love documenting and sharing what I learn, so I hope you enjoy the site.<br/><br/>
 
 <br/>
 Follow me on:
